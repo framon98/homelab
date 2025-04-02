@@ -1,0 +1,14 @@
+services:
+  crowdsec:
+    image: crowdsecurity/crowdsec
+    restart: always
+    network_mode: host
+    environment:
+      COLLECTIONS: "ZoeyVid/npmplus"
+      GID: "${GID-1000}"
+    volumes:
+      # - ./acquis.yaml:/etc/crowdsec/acquis.yaml
+      - /data/nginx:/opt/npm/nginx
+      - ./crowdsec-db:/var/lib/crowdsec/data/
+      - ./crowdsec-config:/etc/crowdsec/
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
