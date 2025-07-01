@@ -14,3 +14,4 @@ This is a list to all services currently living in this repository.
 
 In addition to my homelab I stretched out to use a VPS for some Self-Hosted services Like Stalwart behind the Traefik Reversee Proxy along with Komodo for VPS management. I am adding them as folder and writing the details of the setup in my blog at [blog.monchoplus.com](blog.monchoplus.com)
 
+Now we are hosted on forgejo
